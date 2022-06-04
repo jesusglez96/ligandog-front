@@ -27,15 +27,15 @@ function Register() {
     resolver: yupResolver(schema),
   });
   const onSubmit = async (formData) => {
-    console.log(formData);
-    console.log(formData.image[0]);
+    // console.log(formData);
+    // console.log(formData.image[0]);
     const data = new FormData();
     data.append('file', formData.image[0]);
     data.append('upload_preset', 'ligandog');
-    console.log(data);
+    // console.log(data);
     axios.post(URLS.upload_image, data)
       .then((image) => {
-        console.log(image.data.secure_url);
+        // console.log(image.data.secure_url);
         axios.post(URLS.register, {
           name: formData.name,
           password: formData.password,
@@ -45,7 +45,7 @@ function Register() {
           image: image.data.secure_url,
         })
           .then((response) => {
-            console.log(response);
+            // console.log(response);
             if (response.status === 201) {
               // eslint-disable-next-line no-underscore-dangle
               sessionStorage.setItem('_id', response.data._id);
@@ -53,11 +53,11 @@ function Register() {
             } else {
               setBadUser(true);
             }
-          }).catch((error) => {
+          }).catch(() => {
             setBadUser(true);
-            console.error(error);
+            // console.error(error);
           });
-      }).catch((error) => { console.error(error); });
+      });
   };
   return (
     <main className="register">

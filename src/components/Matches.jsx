@@ -16,7 +16,7 @@ function Matches() {
   useEffect(() => {
     axios.post(URLS.allMatches, { _id: sessionStorage.getItem('_id') })
       .then((usersMatched) => {
-        console.log('usersMatched', usersMatched);
+        // console.log('usersMatched', usersMatched);
         if (usersMatched.data.statusCode >= 200) {
           setMatches(usersMatched.data.response);
         }

@@ -9,7 +9,7 @@ const GotLikes = () => {
   const [loading, setLoading] = useState(true);
 
   const onClickLike = (_id) => {
-    console.log(_id);
+    // console.log(_id);
     axios.post(URLS.match, {
       user1_id: sessionStorage.getItem('_id'),
       user2_id: _id,
@@ -23,7 +23,7 @@ const GotLikes = () => {
   useEffect(() => {
     axios.post(URLS.allGotLikeUsers, { _id: sessionStorage.getItem('_id') })
       .then((usersLikes) => {
-        console.log(usersLikes);
+        // console.log(usersLikes);
         if (usersLikes.data.statusCode >= 200) {
           setLikes(usersLikes.data.response);
         }

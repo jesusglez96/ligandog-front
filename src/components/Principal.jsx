@@ -11,7 +11,7 @@ function Principal() {
   // eslint-disable-next-line no-use-before-define
     const _id = sessionStorage.getItem('_id');
     const userNew = await axios.post(URLS.getNewUser, { _id });
-    console.log(userNew);
+    // console.log(userNew);
     if (userNew.data.statusCode === 200) {
       return userNew.data.response;
     }
@@ -31,7 +31,7 @@ function Principal() {
       userGetLikedID: user._id,
     };
     axios.post(URLS.iLikeUser, data).then((response) => {
-      console.log(response);
+      // console.log(response);
       if (response.data.statusCode === 200) {
         getNewUser();
       }

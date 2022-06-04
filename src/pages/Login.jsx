@@ -25,10 +25,10 @@ function Login() {
     }
   }, []);
   const onSubmit = (formData) => {
-    console.log(formData);
+    // console.log(formData);
     axios.post(URLS.login, formData)
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         if (response.data.response.length === 0) {
           setBadUser(true);
         } else {

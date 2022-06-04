@@ -16,7 +16,7 @@ function MyLikes() {
   useEffect(() => {
     axios.post(URLS.allILikeUsers, { _id: sessionStorage.getItem('_id') })
       .then((usersLikes) => {
-        console.log(usersLikes);
+        // console.log(usersLikes);
         if (usersLikes.data.statusCode >= 200) {
           setLikes(usersLikes.data.response);
         }
