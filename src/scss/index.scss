@@ -1,0 +1,6 @@
+@use './variables' as v;
+
+.index {
+  background-color: v.$greenBackground;
+  height: 100vh;
+}

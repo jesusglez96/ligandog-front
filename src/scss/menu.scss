@@ -1,0 +1,19 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+.menu {
+  background-color: v.$white;
+  box-shadow: 0 2px 6px 2px v.$greyShadow;
+
+  &__container {
+    .logo{
+      width: 100px;
+      @include m.desktop() {
+        width: 250px;
+      }
+    }
+    &__page{
+    background-color: v.$beigeMenu;
+    }
+  }
+}

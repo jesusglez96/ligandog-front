@@ -1,0 +1,40 @@
+@use './variables' as v;
+@use './mixins' as m;
+.item{
+  border: 1px solid v.$greyShadow;
+  border-radius: 25px;
+  background-color: v.$white;
+  box-shadow: 0 4px 4px v.$greyShadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+    &__img {
+      margin: 10px;
+      width: 75px;
+      height: 75px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      shape-outside: circle();
+      clip-path: circle();
+    }
+    &__info{
+      flex-grow: 4;
+      p{
+        text-align: left;
+        @include m.desktop() {
+          margin-left: 25px;
+        }
+      }
+    }
+    &__action {
+      &-button{
+        width: 70px;
+        border: none;
+        background-color: transparent;
+        @include m.desktop() {
+          width: 90px;
+        }
+      }
+    }
+}

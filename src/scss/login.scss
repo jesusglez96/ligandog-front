@@ -1,0 +1,37 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 99vh;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  @include m.desktop() {
+    flex-direction: row;
+  }
+  &__img {
+    @include m.desktop() {
+      margin-left: -90px;
+    }
+  }
+  &__form {
+    &-button {
+      background-color: v.$pinkButton;
+      color: v.$white;
+      width: 100%;
+    }
+    &-info {
+      margin: 10px;
+      p{
+        text-align: center;
+        a{
+          color: v.$greenPrincipal;
+        }
+      }
+    }
+  }
+}
+
