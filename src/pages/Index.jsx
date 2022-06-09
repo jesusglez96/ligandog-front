@@ -7,7 +7,7 @@ function Index() {
   return (
     <div className="index">
       <Menu />
-      <main className="mt-5 container-md">
+      <main className="mt-4 container-md">
         <Outlet />
       </main>
     </div>

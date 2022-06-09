@@ -6,8 +6,9 @@ function Pretendiente({
   image, name, sex, size, email,
 }) {
   return (
-    <div className="pretendiente card mx-auto w-75">
-      <img src={image} className="img-fluid card-img-top" alt="Pretendiente" />
+    <div className="pretendiente mx-auto">
+      <div className="pretendiente__img" style={{ backgroundImage: `url(${image})` }} />
+      {/* <img src={image} className="pretendiente__img card-img-top" alt="Pretendiente" /> */}
       <div className="pretendiente__info card-body">
         <h1 className="card-title">{name}</h1>
         <h2 className="card-text">Email: {email}</h2>

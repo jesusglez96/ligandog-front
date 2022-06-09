@@ -7,9 +7,9 @@
 
   &__container {
     .logo{
-      width: 100px;
+      width: 60px;
       @include m.desktop() {
-        width: 250px;
+        width: 125px;
       }
     }
     &__page{

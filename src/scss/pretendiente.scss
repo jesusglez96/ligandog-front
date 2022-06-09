@@ -2,5 +2,23 @@
 @use './mixins' as m;
 
 .pretendiente {
+  background-color: v.$white;
   filter: drop-shadow(2px 4px 8px v.$greyShadow);
+  height: 500px;
+  @include m.desktop() {
+    width: 800px;
+    height: 900px;
+  }
+  &__img {
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include m.desktop() {
+      height: 85%;
+    }
+  }
+  &__info {
+    padding: 10px;
+  }
 }

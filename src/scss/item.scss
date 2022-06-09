@@ -2,6 +2,7 @@
 @use './mixins' as m;
 
 .item{
+  margin: 10px 0;
   border: 1px solid v.$greyShadow;
   border-radius: 25px;
   background-color: v.$white;
