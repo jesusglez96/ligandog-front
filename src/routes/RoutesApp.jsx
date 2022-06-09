@@ -21,6 +21,7 @@ export default function RoutesApp() {
           <Route exact path="matches" element={<Matches />} />
           <Route exact path="mylikes" element={<MyLikes />} />
           <Route exact path="gotlikes" element={<GotLikes />} />
+          <Route path="" element={<Navigate to="principal" />} replace />
         </Route>
         <Route path="*" element={<Navigate to="/login" />} replace />
       </Routes>

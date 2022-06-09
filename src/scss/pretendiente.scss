@@ -1,0 +1,6 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+.pretendiente {
+  filter: drop-shadow(2px 4px 8px v.$greyShadow);
+}

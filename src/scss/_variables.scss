@@ -1,6 +1,6 @@
 // Colors
 $white: #FFFFFF;
-$greyShadow: rgba(0, 0, 0, 0.25);
+$greyShadow: rgba(0, 0, 0, 0.5);
 $greenBackground: #ECFFE2;
 $beigeMenu: #FEFFE4;
 $greenPrincipal: #01D392;
@@ -9,3 +9,27 @@ $pinkButton: #FA4659;
 // Media query
 $media-point-tablet: 768px;
 $media-point-desktop: 1024px;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;700&display=swap');
+// h1
+$h1Font: 'Poppins', sans-serif;
+$h1Color: $greenPrincipal;
+$h1Size: 24px;
+// h2
+$h2Font: 'Poppins', sans-serif;
+$h2Color: $greyShadow;
+$h2Size: 24px;
+// h3
+$h3Font: 'Poppins', sans-serif;
+$h3Color: #cb9402;
+$h3Size: 16px;
+// p
+$pFont: 'Poppins', sans-serif;
+$pColorTitle: $greenPrincipal;
+$pColorSubtitle: $greyShadow;
+$pSize: 16px;
+// links
+$linkFont: 'Josefin Sans', sans-serif;
+$linkColor: rgba(0, 0, 0);
+$linkSize: 16px;

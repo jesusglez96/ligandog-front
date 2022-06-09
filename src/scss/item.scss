@@ -1,5 +1,6 @@
 @use './variables' as v;
 @use './mixins' as m;
+
 .item{
   border: 1px solid v.$greyShadow;
   border-radius: 25px;
@@ -15,26 +16,28 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      shape-outside: circle();
       clip-path: circle();
     }
     &__info{
       flex-grow: 4;
       p{
         text-align: left;
+        margin: 0;
         @include m.desktop() {
           margin-left: 25px;
         }
       }
+      &-name{
+        color: v.$pColorTitle;
+      }
+      &-email{
+        color: v.$pColorSubtitle;
+      }
     }
-    &__action {
-      &-button{
-        width: 70px;
-        border: none;
-        background-color: transparent;
-        @include m.desktop() {
-          width: 90px;
-        }
+    &__action button{
+      width: 70px;
+      @include m.desktop() {
+        width: 90px;
       }
     }
 }

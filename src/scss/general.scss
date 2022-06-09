@@ -1,0 +1,59 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+html, body{
+  min-height: 100vh;
+}
+#root{
+  min-height: 100vh;
+}
+main{
+  min-height: 100vh;
+}
+h1 {
+  font-family: v.$h1Font;
+  font-size: v.$h1Size;
+  color: v.$h1Color;
+  font-weight: 700;
+}
+h2 {
+  font-family: v.$h2Font;
+  font-size: v.$h2Size;
+  color: v.$h2Color;
+  font-weight: 700;
+}
+h3 {
+  font-family: v.$h3Font;
+  font-size: v.$h3Size;
+  color: v.$h3Color;
+  font-weight: 700;
+}
+p, form{
+  font-family: v.$pFont;
+  font-size: v.$pSize;
+  font-weight: 400;
+}
+a {
+  font-family: v.$linkFont;
+  color: v.$linkColor;
+  font-size: v.$linkSize;
+}
+button {
+  width: 100px;
+  border: none;
+  background-color: transparent;
+  @include m.desktop() {
+    width: 150px;
+  }
+  svg {
+      width: 100%;
+      border-radius: 50%;
+      transition: all;
+      transition-duration: .2s;
+      transition-timing-function: ease-in-out;
+    &:hover {
+      transform: scale(1.25);
+      filter: drop-shadow(4px 6px 14px #cb9402);
+    }
+  }
+}

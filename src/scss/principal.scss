@@ -1,0 +1,14 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+.principal {
+  display: flex;
+  flex-direction: column;
+
+  &__actions {
+    //margin-top: 25px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
