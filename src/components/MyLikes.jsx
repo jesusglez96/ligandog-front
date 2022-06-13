@@ -33,7 +33,7 @@ function MyLikes() {
   return (
     <article className="d-flex flex-column">
       {arrLikes.length > 0 ? arrLikes : (
-        <h1 className="text-center">No le has dado me gusta a nadie!</h1>
+        <h1 className="text-center">¡Aún no te gusta nadie!</h1>
       )}
     </article>
   );

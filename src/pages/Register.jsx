@@ -138,7 +138,8 @@ function Register() {
         {/* Button */}
         <button type="submit" className="register__form-button btn">Register</button>
         <section className="register__form-info">
-          <p>Si estas registrado pulsa <Link to="/login">Aqui</Link></p>
+          <p>Si estás registrado pulsa <Link to="/login">aquí</Link></p>
+          <p>¿Necesitas ayuda? Pulsa <Link to="/registerhelp">aquí</Link></p>
         </section>
       </form>
     </main>

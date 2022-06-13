@@ -7,8 +7,13 @@
 
   &__actions {
     //margin-top: 25px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 60px;
+
+    @include m.desktop() {
+      gap: 50px;
+    }
   }
 }

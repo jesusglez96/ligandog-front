@@ -44,6 +44,9 @@ function Menu() {
                 <Link to="/index/matches" className={currentRoute.includes('matches') ? 'nav-link active' : 'nav-link'} aria-current="page">Matches</Link>
               </li>
               <li className="nav-item">
+                <Link to="/index/indexhelp" className={currentRoute.includes('indexhelp') ? 'nav-link active' : 'nav-link'} aria-current="page">Help</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/login" onClick={() => { sessionStorage.clear(); }} className="nav-link active text-danger" aria-current="page">Log out</Link>
               </li>
             </ul>

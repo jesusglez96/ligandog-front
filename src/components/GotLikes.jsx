@@ -39,7 +39,7 @@ const GotLikes = () => {
   return (
     <article className="d-flex flex-column">
       {arrLikes.length > 0 ? arrLikes : (
-        <h1 className="text-center">Lo siento, naide te ha dado Me gusta</h1>
+        <h1 className="text-center">Lo siento, no le gustas a nadie</h1>
       )}
     </article>
   );

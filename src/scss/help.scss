@@ -1,0 +1,25 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+.help-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+  }
+  &__info {
+    @include m.desktop() {
+      width: 500px;
+    }
+    &-content {
+      text-align: left;
+      @include m.desktop() {
+        min-width: 500px;
+      }
+      padding: 10px;
+    }
+  }
+}

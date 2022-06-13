@@ -62,7 +62,8 @@ function Login() {
         </div>
         <button type="submit" className="login__form-button btn">Log in</button>
         <section className="login__form-info">
-          <p>Si no estas registrado pulsa <Link to="/register">Aqui</Link></p>
+          <p>Si no estás registrado pulsa <Link to="/register">aquí</Link></p>
+          <p>¿Necesitas ayuda? Pulsa <Link to="/loginhelp">aquí</Link></p>
         </section>
       </form>
     </main>

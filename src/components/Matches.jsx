@@ -32,7 +32,7 @@ function Matches() {
   return (
     <article className="d-flex flex-column">
       {arrMatches.length > 0 ? arrMatches : (
-        <h1 className="text-center">No tienes ningun Match!</h1>
+        <h1 className="text-center">¡No tienes ningún Match!</h1>
       )}
     </article>
   );

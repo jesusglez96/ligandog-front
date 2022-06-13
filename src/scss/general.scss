@@ -43,7 +43,7 @@ button {
   border: none;
   background-color: transparent;
   @include m.desktop() {
-    width: 150px;
+    width: 120px;
   }
   svg {
       width: 100%;
